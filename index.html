@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Teamup Auto Refresh</title>
   <script>
-    // Tiempo de refresco en minutos
+    // Definir el tiempo en minutos
     const minutes = 5;
-    const refreshTime = minutes * 60 * 1000; // convierte a milisegundos
+    const refreshTime = minutes * 60 * 1000; // 300000 ms = 5 min
 
-    setTimeout(() => {
-      window.location.reload(true); // fuerza la recarga desde el servidor
+    // Recarga cada X tiempo
+    setInterval(() => {
+      window.location.reload(true); 
     }, refreshTime);
   </script>
   <style>
