@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teamup Auto Refresh</title>
+  <script>
+    setTimeout(function () {
+      location.reload();
+    }, 300000); // recarga cada 300.000 ms = 5 minutos
+  </script>
+  <style>
+    html, body, iframe {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe 
+    src="https://teamup.com/c/251h9g/aust--hachmann-ohg" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
